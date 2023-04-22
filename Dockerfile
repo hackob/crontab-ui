@@ -11,6 +11,7 @@ LABEL maintainer "@alseambusher"
 LABEL description "Crontab-UI docker"
 
 RUN   apk --no-cache add \
+      bash \
       wget \
       curl \
       nodejs \
