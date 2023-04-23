@@ -10,7 +10,9 @@ WORKDIR /crontab-ui
 LABEL maintainer "@alseambusher"
 LABEL description "Crontab-UI docker"
 
-RUN   apk --no-cache add \
+RUN   apk update && \
+      apk add \
+      bash \
       wget \
       curl \
       nodejs \
